@@ -43,12 +43,12 @@ interface Props {
   brandLogo?: string
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   brandName: 'NepalNews',
   brandLogo: 'N',
 })
 
-const { isDark, toggle: toggleTheme } = useDarkMode()
+const { toggle: toggleTheme } = useDarkMode()
 const isMobileMenuOpen = ref(false)
 
 const navigationItems = ref([
