@@ -4,13 +4,12 @@ import pluginVitest from '@vitest/eslint-plugin'
 import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
 import eslintConfigPrettier from 'eslint-config-prettier'
 
-
 export default [
   {
-    files: ['src/components/**/*.vue',],
+    files: ['src/components/**/*.vue'],
     rules: {
-      'vue/multi-word-component-names': 'off'
-    }
+      'vue/multi-word-component-names': 'off',
+    },
   },
 
   {
@@ -31,5 +30,5 @@ export default [
     files: ['src/**/__tests__/*'],
   },
   skipFormatting,
-  eslintConfigPrettier
+  eslintConfigPrettier,
 ]
