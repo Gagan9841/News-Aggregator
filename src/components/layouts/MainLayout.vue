@@ -12,17 +12,16 @@
       class="flex-grow mt-16 container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8"
       :class="{ 'blur-sm': isMobileMenuOpen }"
     >
-      <HomeTrending />
-      <Transition
+      <!-- <Transition
         enter-active-class="transition-opacity duration-200 ease-out"
         enter-from-class="opacity-0"
         enter-to-class="opacity-100"
         leave-active-class="transition-opacity duration-150 ease-in"
         leave-from-class="opacity-100"
         leave-to-class="opacity-0"
-      >
-        <slot></slot>
-      </Transition>
+      > -->
+      <slot></slot>
+      <!-- </Transition> -->
     </main>
 
     <Footer

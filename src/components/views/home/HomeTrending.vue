@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+  <div class="bg-white dark:bg-gray-900 border-b mb-4 border-gray-200 dark:border-gray-700">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
       <div class="flex items-center space-x-4">
         <h3 class="text-lg font-semibold text-gray-900 dark:text-white whitespace-nowrap">

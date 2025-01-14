@@ -1,5 +1,8 @@
 <template>
-  <div>this is home page</div>
+  <MainLayout>
+    <HomeTrending />
+    <HomeHeadline />
+  </MainLayout>
 </template>
 
 <script setup lang="ts">

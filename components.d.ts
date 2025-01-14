@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Badge: typeof import('./src/components/ui/badge/Badge.vue')['default']
     Button: typeof import('./src/components/ui/button/Button.vue')['default']
     Footer: typeof import('./src/components/ui/footer/Footer.vue')['default']
     Header: typeof import('./src/components/ui/header/Header.vue')['default']
@@ -16,6 +17,10 @@ declare module 'vue' {
     MainLayout: typeof import('./src/components/layouts/MainLayout.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Tooltip: typeof import('./src/components/ui/tooltip/Tooltip.vue')['default']
+    TooltipContent: typeof import('./src/components/ui/tooltip/TooltipContent.vue')['default']
+    TooltipProvider: typeof import('./src/components/ui/tooltip/TooltipProvider.vue')['default']
+    TooltipTrigger: typeof import('./src/components/ui/tooltip/TooltipTrigger.vue')['default']
     Trending: typeof import('./src/components/views/home/Trending.vue')['default']
   }
 }
