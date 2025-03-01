@@ -2,6 +2,11 @@
   <MainLayout>
     <HomeTrending />
     <HomeHeadline />
+    <home-news />
+    <HomeCategories />
+    <HomeRegional />
+    <HomeOpinion />
+    <HomeMultimedia />
   </MainLayout>
 </template>
 

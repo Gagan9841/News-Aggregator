@@ -26,6 +26,13 @@ export default [
   ...vueTsEslintConfig(),
 
   {
+    name: 'app/typescript-rules',
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off', // Allow 'any' type in the project
+    },
+  },
+
+  {
     ...pluginVitest.configs.recommended,
     files: ['src/**/__tests__/*'],
   },

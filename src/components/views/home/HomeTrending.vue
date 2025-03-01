@@ -1,20 +1,24 @@
 <template>
-  <div class="bg-white dark:bg-gray-900 border-b mb-4 border-gray-200 dark:border-gray-700">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
-      <div class="flex items-center space-x-4">
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white whitespace-nowrap">
+  <div class="bg-primary-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div class="flex items-center space-x-6">
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white whitespace-nowrap">
           Trending Topics:
         </h3>
 
-        <div class="flex items-center space-x-4 overflow-x-auto scrollbar-hide">
+        <div class="flex items-center space-x-4 overflow-x-auto scrollbar-hide py-2">
           <a
             v-for="topic in trendingTopics"
             :key="topic.id"
             :href="topic.link"
-            class="flex items-center space-x-2 bg-gray-100 dark:bg-gray-800 rounded-full px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+            class="flex items-center space-x-2 bg-white dark:bg-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500"
           >
-            <img :src="topic.image" :alt="topic.title" class="w-8 h-8 rounded-full object-cover" />
-            <span class="text-sm font-medium text-gray-700 dark:text-gray-300">
+            <img
+              :src="topic.image"
+              :alt="topic.title"
+              class="w-8 h-8 rounded-full object-cover border-2 border-white dark:border-gray-600"
+            />
+            <span class="text-sm font-medium text-gray-800 dark:text-gray-200">
               {{ topic.title }}
             </span>
           </a>

@@ -1,6 +1,6 @@
 <template>
   <article
-    class="relative group bg-white dark:bg-gray-900 my-2 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+    class="relative group bg-white dark:bg-gray-900 rounded-xl transition-all duration-300 overflow-hidden"
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >

@@ -9,19 +9,12 @@
       @theme-toggle="toggleTheme"
     />
     <main
-      class="flex-grow mt-16 container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8"
+      class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 pb-4 sm:pb-6 lg:pb-8 pt-20 sm:pt-20 lg:pt-20"
       :class="{ 'blur-sm': isMobileMenuOpen }"
     >
-      <!-- <Transition
-        enter-active-class="transition-opacity duration-200 ease-out"
-        enter-from-class="opacity-0"
-        enter-to-class="opacity-100"
-        leave-active-class="transition-opacity duration-150 ease-in"
-        leave-from-class="opacity-100"
-        leave-to-class="opacity-0"
-      > -->
-      <slot></slot>
-      <!-- </Transition> -->
+      <div class="flex flex-col gap-y-4 sm:gap-y-6 lg:gap-y-8">
+        <slot></slot>
+      </div>
     </main>
 
     <Footer

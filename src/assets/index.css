@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@import './patterns.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +9,8 @@
 @layer base {
   :root {
     /* Modern Blue Theme for News Platform */
-    --background: 210 40% 98%; /* Light cool background */
+    --background: 210 40% 98%;
+    /* Light cool background */
     --foreground: 222 47% 11%;
 
     --muted: 215 16% 95%;
@@ -82,6 +85,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -89,10 +93,13 @@
 
 /* Hide scrollbar for trending topics */
 .scrollbar-hide {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
+  display: none;
+  /* Chrome, Safari, and Opera */
 }

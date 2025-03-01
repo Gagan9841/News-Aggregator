@@ -11,7 +11,13 @@ declare module 'vue' {
     Button: typeof import('./src/components/ui/button/Button.vue')['default']
     Footer: typeof import('./src/components/ui/footer/Footer.vue')['default']
     Header: typeof import('./src/components/ui/header/Header.vue')['default']
+    HomeCategories: typeof import('./src/components/views/home/HomeCategories.vue')['default']
     HomeHeadline: typeof import('./src/components/views/home/HomeHeadline.vue')['default']
+    HomeMultimedia: typeof import('./src/components/views/home/HomeMultimedia.vue')['default']
+    HomeNews: typeof import('./src/components/views/home/HomeNews.vue')['default']
+    HomeNewsLetter: typeof import('./src/components/views/home/HomeNewsLetter.vue')['default']
+    HomeOpinion: typeof import('./src/components/views/home/HomeOpinion.vue')['default']
+    HomeRegional: typeof import('./src/components/views/home/HomeRegional.vue')['default']
     HomeTrending: typeof import('./src/components/views/home/HomeTrending.vue')['default']
     Input: typeof import('./src/components/ui/input/Input.vue')['default']
     MainLayout: typeof import('./src/components/layouts/MainLayout.vue')['default']
@@ -21,6 +27,5 @@ declare module 'vue' {
     TooltipContent: typeof import('./src/components/ui/tooltip/TooltipContent.vue')['default']
     TooltipProvider: typeof import('./src/components/ui/tooltip/TooltipProvider.vue')['default']
     TooltipTrigger: typeof import('./src/components/ui/tooltip/TooltipTrigger.vue')['default']
-    Trending: typeof import('./src/components/views/home/Trending.vue')['default']
   }
 }
